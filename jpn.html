@@ -1,0 +1,38 @@
+
+<!-- 
+python -m SimpleHTTPServer to read file 
+
+http://localhost:8000/jpn.html
+-->     
+
+<!doctype html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<!--       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+-->
+  </head>
+  <body>
+
+       
+
+    <p id = "demo"> </p>
+
+    <textarea id = "display"> </textarea>
+    <form name="QUIZ" onsubmit="showAns()" method="post">
+    Answer: <input type="text" name="ANS">
+    <input type="submit" value="Submit">
+    </form>
+    <button onclick="showAns()">Try it</button>
+
+    <button onclick="test2()">shuffle</button>
+
+
+
+
+<script src="javascripts/jpn.js"></script>
+
+  </body>
+
+</html>

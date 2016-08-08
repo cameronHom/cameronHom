@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--   
+http://tutsme-webdesign.info/bootstrap-3-toggable-tabs-and-pills/
+ -->
+
+<!-- CDN (Content Delivery Network) -->        
+
+
+      <link rel="stylesheet" href= "css/style.css" >
+      <link rel="stylesheets" href="css/bootstrap.css">
+      <script src="javascripts/jquery.js"></script>
+      <script src="javascripts/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="css/bootstrap.css">
+      
+
+<!--  my own scripts -->
+      <script src="javascripts/box_animation.js"> </script>
+
+
+      
+<!--  you need this for the tool tip  -->
+      <script type="text/javascript"> 
+        $(function () {$('[data-toggle="tooltip"]').tooltip()})
+      </script>
+  <style type="text/css">
+  
+#wide {
+  flex: 1;
+  padding-left: 20px;
+  width: 500px;
+  /*calc(100% - 180px);*/
+  /* Grow to rest of container */
+  background: lightgreen;
+  /* Just so it's visible */
+}
+
+
+
+  </style>
+
+  </head>
+
+
+        <body data-spy="scroll" data-target="#myScrollspy" onload="init();">
+              
+              <div id = "header" >
+              
+
+              </div>
+
+        
+              <div id="parent">
+                <div   id="sideBar">
+                    <ul style="list-style-type:none">
+                      <li> <a href = "#skills" >Skills </a></li>
+                      <li><a href= "#projects">Projects </a></li>
+                      <li><a href= "#future">Future </a></li>
+                    </ul>
+
+
+                </div>
+                <div id="sideBar2">
+
+
+                </div>
+                
+
+
+
+                <div style="font-size:36px" class="wide">
+
+                    <h1 id = "skills" >Skills</h1>
+                      <ul style="list-style-type:square">
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Ruby</li>
+                      </ul>
+                    
+                    <h1 id = "projects" >Projects</h1>
+                    <p>Delta Slug - 2D scroller made with Unity</p>
+                    <p>Kind of Tokyo - C++ terminal game based on the board game</p>
+                    <h1 id = "future" >Future</h1>
+                    <p>Working on Node js site that keeps track of my clan in Clash of Clans</p>
+
+                </div>
+              </div>
+
+          
+        </body>
+</html>
+
+<!-- 
+git add -all
+git commit -m "++++++"
+git push -u origin master
+ -->
